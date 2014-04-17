@@ -1,15 +1,20 @@
 <?xml version="1.0"?>
 <config>
+	<id>theme gallery-4</id>
+	<type>theme</type>
 	<view>pc</view>
+	<category>gallery</category>
 	<name>
 		<en>Gallery No. 2</en>
 		<ko>갤러리 2 번 테마</ko>
 	</name>
 	<version>0.1</version>
+	<author>JaeHo Song</author>
+	<email>thruthesky@gmail.com</email>
 	<demo>http://boardinghouse.philgo.net</demo>
 	<short>
-		<en></en>
-		<ko></ko>
+		<en>Gallery No. 2</en>
+		<ko>Gallery No. 2</ko>
 	</short>
 	<detail>
 		<en></en>
