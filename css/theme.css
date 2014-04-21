@@ -16,6 +16,7 @@ body {
 
 .header .header-logo img {
 	width: 100%;
+	margin-left: 10px;
 }
 
 .header .logo-menu {
@@ -25,12 +26,13 @@ body {
 
 
 .header .logo-menu .header-logo {
-	width: 250px;
+	width: 300px;
 	background: #f3f3f3;
 }
 
 .top-menu {
 	width: 720px;
+
 }
 
 .header-logo-td {
@@ -39,7 +41,6 @@ body {
 }
 
 .login-panel-td {
-	width: 1500px;
 	background: #334d5c;
 	padding: 8px 0 7px 0;
 }
