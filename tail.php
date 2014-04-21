@@ -1,4 +1,5 @@
 	</div> <!--content-->
+	<div style='clear: both'></div>
 	<div class='footer'>
 		<table cellspacing='0' cellpadding='0' width='100%'>
 			<tr>
