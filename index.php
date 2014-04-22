@@ -77,7 +77,16 @@
 	<?	}?>
 <div class='posts-container'>
 	<div class='left-posts-container'>
-		<?=latest( 'x-latest-left-gallery', bo_table(1) , 3, 40 )?>
+	<?
+		include widget(
+			array(
+				'code'		=> 'x-latest-left-gallery',
+				'name'		=> 'x-latest-left-gallery',
+				'default_forum_id' => bo_table(1),
+				'git'		=> 'https://github.com/x-widget/x-latest-left-gallery',
+			)
+		);
+	?>
 	</div>
 	<div class='right-posts-container'>
 		<div class='right-panel-posts'>
@@ -89,7 +98,16 @@
 			</div> 
 		</div>
 		<div class='right-gallery-post'>
-			<?=latest( 'x-latest-right-gallery', bo_table(4), 1, 40 )?>
+		<?
+			include widget(
+				array(
+					'code'		=> 'x-latest-right-gallery',
+					'name'		=> 'x-latest-right-gallery',
+					'default_forum_id' => bo_table(4),
+					'git'		=> 'https://github.com/x-widget/x-latest-right-gallery',
+				)
+			);
+		?>
 		</div>
 		<div style='clear: left'></div>
 	</div>

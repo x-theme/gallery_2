@@ -23,3 +23,9 @@
 		</table>
 	</div> 
 </div><!--layout-->
+
+<style>
+.widget-admin > .button {
+	z-index: 999999;
+}
+</style>
