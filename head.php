@@ -54,7 +54,15 @@
 					</div>
 					<div class='login-container'>
 						<div class='triangle'></div>
-						<?=outlogin('x-outlogin-gallery-2')?>
+						<?php
+							include widget(
+								array(
+									'code'		=> 'login-gallery-2',
+									'name'		=> 'login-gallery-2',
+									'git'		=> 'https://github.com/x-widget/login-gallery-2',
+								)
+							);
+						?>
 					</div>
 					<div class='search-container'>
 						<div class='triangle'></div>
