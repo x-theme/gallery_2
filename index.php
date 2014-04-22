@@ -91,10 +91,32 @@
 	<div class='right-posts-container'>
 		<div class='right-panel-posts'>
 			<div class='right-posts-1'>
-				<?=latest( 'x-latest-gallery-posts', bo_table(2), 10, 40 )?>
+		<?
+			include widget(
+				array(
+					'code'		=> 'x-latest-gallery-posts-1',
+					'name'		=> 'x-latest-gallery-posts',
+					'default_forum_id' => bo_table(2),
+					//temporarily added default_no_of_posts
+					'default_no_of_posts' => 10,					
+					'git'		=> 'https://github.com/x-widget/x-latest-gallery-posts',
+				)
+			);
+		?>
 			</div>
 			<div class='right-posts-2'>
-				<?=latest( 'x-latest-gallery-posts', bo_table(3), 5, 40 )?>
+		<?
+			include widget(
+				array(
+					'code'		=> 'x-latest-gallery-posts-2',
+					'name'		=> 'x-latest-gallery-posts',
+					'default_forum_id' => bo_table(3),
+					//temporarily added default_no_of_posts
+					'default_no_of_posts' => 5,					
+					'git'		=> 'https://github.com/x-widget/x-latest-gallery-posts',
+				)
+			);
+		?>
 			</div> 
 		</div>
 		<div class='right-gallery-post'>
