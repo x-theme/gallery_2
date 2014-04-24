@@ -23,12 +23,15 @@
 				<div class='images-container' style='z-index: 50; width: <?=$container_width+(968*2)?>px; position: relative; left: -968px;' container-width='<?=$container_width?>'>
 				<?
 					/** Fake Last Image */
-							if ( !$url = $banners[$total_banners-1]['href'] ) $url = "javascript:void(0)";
+							if ( !$url = $banners[$total_banners-1]['href'] ) {
+								$url = "javascript:void(0)";
+								$target = '';
+							} else $target = "target='_blank'";
 							
 							echo "<div class='fake-image'>";
-							echo "<a href='$url' target='_blank'><img src='".$banners[$total_banners-1]['src']."'></a>";
-							echo "<a href='$url' target='_blank'><span class='banner-content'><p class='banner-text'><div class='post-subject'>".cut_str(strip_tags($banners[$total_banners-1]['subject']),50,'...')."</div><div class='post-content'>".cut_str(strip_tags($banners[$total_banners-1]['content']),200,'...')."</div></p></span></a>";
-							echo "<div class='banner-more'><a href='$url' target='_blank'>자세히 &gt;</a></div>";
+							echo "<a href='$url' $target><img src='".$banners[$total_banners-1]['src']."'></a>";
+							echo "<a href='$url' $target><span class='banner-content'><p class='banner-text'><div class='post-subject'>".cut_str(strip_tags($banners[$total_banners-1]['subject']),50,'...')."</div><div class='post-content'>".cut_str(strip_tags($banners[$total_banners-1]['content']),200,'...')."</div></p></span></a>";
+							echo "<div class='banner-more'><a href='$url' $target>자세히 &gt;</a></div>";
 							echo "</div>";	
 					
 					if ( $banners ) {
@@ -37,11 +40,14 @@
 							if ( ! $selected ++ ) $first_image = 'selected';
 							else $first_image = '';
 							
-							if ( !$url = $banner['href'] ) $url = "javascript:void(0)";
+							if ( !$url = $banner['href'] ) {
+								$url = "javascript:void(0)";
+								$target = '';
+							} else $target = "target='_blank'";
 							echo "<div class='banner-image image_$selected $first_image' image_num='$selected'>";
-							echo "<a href='$url' target='_blank'><img src='$banner[src]''></a>";
-							echo "<a href='$url' target='_blank'><span class='banner-content'><p class='banner-text'><div class='post-subject'>".cut_str(strip_tags($banner['subject']),50,'...')."</div><div class='post-content'>".cut_str(strip_tags($banner['content']),200,'...')."</div></p></span></a>";
-							echo "<div class='banner-more'><a href='$url' target='_blank'>자세히 &gt;</a></div>";
+							echo "<a href='$url' $target><img src='$banner[src]''></a>";
+							echo "<a href='$url' $target><span class='banner-content'><p class='banner-text'><div class='post-subject'>".cut_str(strip_tags($banner['subject']),50,'...')."</div><div class='post-content'>".cut_str(strip_tags($banner['content']),200,'...')."</div></p></span></a>";
+							echo "<div class='banner-more'><a href='$url' $target>자세히 &gt;</a></div>";
 							echo "</div>";						
 						}
 					}
@@ -54,9 +60,10 @@
 							if ( !$url = $banners[0]['href'] ) $url = "javascript:void(0)";
 							
 							echo "<div class='banner-image' image_num='".($total_banners+1)."'>";
-							echo "<a href='$url' target='_blank'><img src='".$banners[0]['src']."'></a>";
-							echo "<a href='$url' target='_blank'><span class='banner-content'><p class='banner-text'><div class='post-subject'>".cut_str(strip_tags($banners[0]['subject']),50,'...')."</div><div class='post-content'>".cut_str(strip_tags($banners[0]['content']),200,'...')."</div></p></span></a>";
-							echo "<div class='banner-more'><a href='$url' target='_blank'>자세히 &gt;</a></div>";
+							echo "<a href='$url' $target><img src='".$banners[0]['src']."'></a>";
+							echo "<a href='$url' $target><span class='banner-content'><p class='banner-text'><div class='post-subject'>".cut_str(strip_tags($banners[0]['subject']),50,'...')."</div><div class='post-content'>".cut_str(strip_tags($banners[0]['content']),200,'...')."</div></p></span></a>";
+							echo "<div class='banner-more'><a href='$url' $target>자세히 &gt;</a></div>";
+							echo "<div class='banner-more'><a href='$url' $target>자세히 &gt;</a></div>";
 							echo "</div>";						
 				?>
 				</div>

@@ -5,44 +5,42 @@ body {
 /*HEADER*/
 .header {
 	width: 100%;
-	margin-bottom: 0.625em;
+	position: relative;
+	height: 178px;
 }
 
-.header .header-logo {
+.header_main {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.header_main .inner {
+	margin: 0 auto;
+	max-width: 970px;
+}
+
+.header .header_left, .header .header_right {
+	float: left;
+	width: 50%;
+	height: 168px;
+}
+
+.top-menu {
+
+}
+
+.header-logo-td {
+	background: #f3f3f3;
 	width: 250px;
 	height: 100px;
 	overflow: hidden;
 }
 
-.header .header-logo img {
-	width: 100%;
-	margin-left: 10px;
-}
-
-.header .logo-menu {
-	max-width: 970px;
-	margin: 0 auto;
-}
-
-
-.header .logo-menu .header-logo {
-	width: 300px;
-	background: #f3f3f3;
-}
-
-.top-menu {
-	width: 720px;
-
-}
-
-.header-logo-td {
-	width: 1120px;
-	background: #f3f3f3;
-}
-
 .login-panel-td {
 	background: #334d5c;
 	padding: 8px 0 7px 0;
+	text-align: left;
 }
 
 .login-panel-td a {
@@ -50,7 +48,6 @@ body {
 }
 
 .top-menu-td {
-	width: 1880px;
 	background: #4e8077;
 }
 .menu-panel-td {
@@ -87,8 +84,8 @@ body {
 
 
 .login-panel {
-	padding: 0 8px;
-	width: 234px;
+	padding: 0;
+	width: 100%;
 	color: #ffffff;
 	background: #334d5c;
 	position: relative;
@@ -106,18 +103,17 @@ body {
 	height: 60px;
 }
 
-.login-panel > div {
+.login-button, .search-button, .register-edit-button {
 	float: left;
 	text-align: center;
-	border-radius: 3px;
-	margin-left: 10px;
+	margin: 0;
+	width: 33%;
+	cursor: pointer;
 }
 
-.login-button, .statistics-button, .search-button, .register-edit-button {
-	margin: 0;
-	width: 65px;
+.login-button .inner, .search-button .inner , .register-edit-button .inner {
 	padding: 8px 0;
-	cursor: pointer;
+	border-radius: 3px;
 }
 
 .login-panel > div img {
@@ -156,7 +152,7 @@ body {
 	border-bottom: solid 1px #ffffff;
 }
 
-.active-popup-menu {
+.active-popup-menu .inner {
 	background: #58839c;
 }
 
@@ -459,5 +455,3 @@ body {
 .right-posts-2 .latest-gallery-posts .title{
 	padding-bottom: 9px;
 }
-
-
