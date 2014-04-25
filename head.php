@@ -96,6 +96,7 @@
 								<ul>
 									<?="<li class='first-menu'>" . implode( "</li><li>", x::menu_links('top') ) . "</li>"?>
 								</ul>
+								<div style="clear: left"></div>
 							</div>
 						</td>
 					</tr>

@@ -22,18 +22,7 @@
 			<div class='inner' style="position: relative; height: 318px; width: 968px;">
 				<div class='images-container' style='z-index: 50; width: <?=$container_width+(968*2)?>px; position: relative; left: -968px;' container-width='<?=$container_width?>'>
 				<?
-					/** Fake Last Image */
-							if ( !$url = $banners[$total_banners-1]['href'] ) {
-								$url = "javascript:void(0)";
-								$target = '';
-							} else $target = "target='_blank'";
-							
-							echo "<div class='fake-image'>";
-							echo "<a href='$url' $target><img src='".$banners[$total_banners-1]['src']."'></a>";
-							echo "<a href='$url' $target><span class='banner-content'><p class='banner-text'><div class='post-subject'>".cut_str(strip_tags($banners[$total_banners-1]['subject']),50,'...')."</div><div class='post-content'>".cut_str(strip_tags($banners[$total_banners-1]['content']),200,'...')."</div></p></span></a>";
-							echo "<div class='banner-more'><a href='$url' $target>자세히 &gt;</a></div>";
-							echo "</div>";	
-					
+
 					if ( $banners ) {
 						$selected = 0;
 						foreach ( $banners as $banner ) {					
@@ -55,7 +44,7 @@
 						echo "<img src='".x::url_theme()."/img/no_image_banner1.png' />";
 					}
 
-					/**Fake First Image */
+					/**Fake Image */
 					
 							if ( !$url = $banners[0]['href'] ) $url = "javascript:void(0)";
 							
@@ -64,7 +53,10 @@
 							echo "<a href='$url' $target><span class='banner-content'><p class='banner-text'><div class='post-subject'>".cut_str(strip_tags($banners[0]['subject']),50,'...')."</div><div class='post-content'>".cut_str(strip_tags($banners[0]['content']),200,'...')."</div></p></span></a>";
 							echo "<div class='banner-more'><a href='$url' $target>자세히 &gt;</a></div>";
 							echo "<div class='banner-more'><a href='$url' $target>자세히 &gt;</a></div>";
-							echo "</div>";						
+							echo "</div>";	
+
+
+							
 				?>
 				</div>
 				<div class='banner-pagination'>
