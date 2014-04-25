@@ -43,6 +43,7 @@ body {
 .header-logo-td {
 	background: #f3f3f3;
 	width: 250px;
+	height: 100px;
 	overflow: hidden;
 }
 
@@ -53,9 +54,11 @@ body {
 }
 
 .login-panel-td {
-	/*background: #334d5c;*/
 	padding: 8px 0 7px 0;
 	text-align: left;
+	width: 250px;
+	height: 53px;
+	overflow: hidden;
 }
 
 .login-panel-td a {
@@ -64,9 +67,14 @@ body {
 
 .top-menu-td {
 	background: #4e8077;
+	width: 720px;
+	height: 100px;
+	overflow: hidden;
 }
 .menu-panel-td {
 	background: #45b29d;
+	width: 720px;
+	height: 53px;
 }
 
 .top-menu ul {
@@ -103,6 +111,8 @@ body {
 	color: #ffffff;
 	/*background: #334d5c;*/
 	position: relative;
+	height: 53px;
+	overflow: hidden;
 }
 
 .login-panel a {

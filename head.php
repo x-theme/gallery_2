@@ -6,7 +6,7 @@
 	<div style='clear: left'></div>
 	<div class='header_main'>
 		<div class='inner'>
-			<table cellspacing='0' cellpadding='0' width='970'>
+			<table cellspacing='0' cellpadding='0' width='970' height='168'>
 					<tr valign='top'>
 						<td class='header-logo-td' align='right'>
 							<div class='header-logo'>
