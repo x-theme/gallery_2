@@ -12,20 +12,18 @@
 						 <a style='color: #ffffff;' href='".url_site_config()."'>사이트 설정</a>
 					";
 				?>
+				<? if ( admin() ) {?>
+					<div class='footer-site-url'><a href="<?=url_site_config()?>" class='user-win'>사이트 관리</a></div>
+				<? } ?>
 				</td>
 				<td valign='middle' class='footer-logo'>
 					<div class='footer-logo-container'>
 					<? echo "<a href='http://www.philgo.com' target='_blank'><img style='border:0;' src='".x::url_theme()."/img/footer_logo.png' /></a>";?>
 					</div>
 					<p>필리핀 최대 정보 커뮤니티 필고</p>
+									<td>	
 				</td>
 			</tr>
 		</table>
 	</div> 
 </div><!--layout-->
-
-<style>
-.widget-admin > .button {
-	z-index: 999999;
-}
-</style>

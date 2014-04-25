@@ -30,12 +30,12 @@
 					<tr>
 							<?
 									if ( login() ) {
-										$register_link = g::url()."/bbs/member_confirm.php?url=register_form.php";
+										$register_link = url_bbs()."/member_confirm.php?url=register_form.php";
 										$register_text = "정보수정";
-										$login_text = "<a href='".G5_BBS_URL."/logout.php' class='logout-link'></a>로그아웃";
+										$login_text = "로그아웃";
 									}
 									else {
-										$register_link = g::url()."/bbs/register.php";
+										$register_link = url_bbs()."/register.php";
 										$register_text = "회원가입";
 										$login_text = "로그인";
 									}
@@ -47,13 +47,15 @@
 									<div class='inner'>
 										<img src="<?=x::theme_url('img/top_icon1.png')?>"/>
 										<p><?=$login_text?></p>
+										<? if ( login() ) echo "<a href='".url_bbs()."/logout.php' class='menu_link'></a>" ?>
 									</div>
 								</div>
 								
 								<div class='register-edit-button'>
 									<div class='inner'>
-										<a href='<?=$register_link?>'><img src="<?=x::theme_url('img/top_icon2.png')?>"/></a>
-										<a href='<?=$register_link?>'><p><?=$register_text?></p></a>
+										<img src="<?=x::theme_url('img/top_icon2.png')?>"/></a>
+										<p><?=$register_text?></p>
+										<a href='<?=$register_link?>' class='menu_link'></a>
 									</div>
 								</div>
 								<div class='search-button'>
