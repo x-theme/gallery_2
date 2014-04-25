@@ -76,7 +76,7 @@ body {
 }
 
 .top-menu ul li {
-	display: inline-block;
+	float: left;
 	margin-left: 10px;
 }
 
