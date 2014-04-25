@@ -62,7 +62,7 @@
 									<div class='inner'>
 										<img src="<?=x::theme_url('img/top_icon3.png')?>"/>
 										<p>검색</p>
-									</div>
+									</div> 
 								</div>
 								<div class='login-container'>
 									<div class='triangle'></div>
