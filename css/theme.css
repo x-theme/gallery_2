@@ -8,6 +8,7 @@ body {
 	position: relative;
 	height: 168px;
 	margin-bottom: 10px;
+	z-index: 999;
 }
 
 .header_main {
@@ -19,6 +20,7 @@ body {
 .header_main .inner {
 	margin: 0 auto;
 	max-width: 970px;
+	position: relative;
 }
 
 .header .header_left {
@@ -198,7 +200,6 @@ body {
 .layout .content {
 	width: 970px;
 	margin: 0 auto;
-	min-height: 600px;
 }
 
 /*FOOTER*/
@@ -247,10 +248,10 @@ body {
 /** TOP ICONS */
 .login-container {
 	position: absolute;
-	top: 55px;
+	top: 165px;
 	width: 300px;
 	display: none;
-	z-index: 999;
+	z-index: 99;
 }
 
 .triangle {
@@ -270,7 +271,7 @@ body {
 	top: 54px;
 	left: 80px;
 	display: none;
-	z-index: 998;
+
 }
 
 .statistics-container .triangle {
@@ -279,11 +280,10 @@ body {
 
 .search-container {
 	position: absolute;
-	top: 54px;
+	top: 165px;
 	left: 157px;
 	display: none;
 	width: 170px;
-	z-index: 997;
 }
 
 #gallery_2_search_forum_text {
@@ -368,7 +368,7 @@ body {
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
-	z-index: 100;
+	z-index: 99;
 }
 
 .banner-pagination .page_num {
@@ -397,7 +397,7 @@ body {
 	font-size: 24px;
 	cursor: pointer;
 	display: none;
-	z-index: 100;
+	z-index: 99;
 }
 
 .previous-banner {

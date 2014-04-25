@@ -65,4 +65,6 @@ $(function(){
 		else if ( page_num == total_banners ) $(".next-banner").hide().siblings(".previous-banner").show();		
 		else $(".next-banner").show().siblings(".previous-banner").show();			
 	}
+	
+
 });
