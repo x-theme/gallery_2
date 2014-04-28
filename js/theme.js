@@ -49,7 +49,7 @@ $(function(){
 		}
 		
 	});
-	
+	/*
 	$('.top-posts').mouseenter(function(){
 		$(this).find('.top-posts-container').show();
 	});
@@ -73,5 +73,5 @@ $(function(){
 	$('.right-post').mouseleave(function(){
 		$(this).find('.right-posts-container').hide();
 	});
-
+*/
 });
