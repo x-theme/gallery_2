@@ -55,6 +55,10 @@ body {
 	overflow: hidden;
 }
 
+.header-logo img {
+	width: 100%;
+}
+
 .login-panel-td {
 	padding: 8px 0 7px 0;
 	text-align: left;
