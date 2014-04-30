@@ -9,7 +9,7 @@
 		<div class='inner'>
 			<table cellspacing='0' cellpadding='0' width='970' height='168'>
 					<tr valign='top'>
-						<td class='header-logo-td' align='right'>
+						<td class='header-logo-td' align='left'>
 							<div class='header-logo'>
 								<a href="<?=g::url()?>"/>
 									<?if( file_exists( path_logo() ) ) { ?>
